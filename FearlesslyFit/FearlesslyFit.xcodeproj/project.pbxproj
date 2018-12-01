@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8010372FD21BAA2E1B1C3F55 /* libPods-FearlesslyFit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5A9D98FAD45FF83A4665DD /* libPods-FearlesslyFit.a */; };
+		CF206623219F350400192E2D /* person-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CF206622219F350400192E2D /* person-placeholder.png */; };
+		CF206629219F3F2300192E2D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF206628219F3F2300192E2D /* AuthService.swift */; };
+		CF20662D219F475700192E2D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20662C219F475700192E2D /* Config.swift */; };
+		CF3BFAAA2189AE0300ECD2EC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3BFAA92189AE0300ECD2EC /* Home.storyboard */; };
+		CF3BFAAC2189AE2800ECD2EC /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3BFAAB2189AE2800ECD2EC /* Social.storyboard */; };
+		CF3BFAAE2189AE3A00ECD2EC /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3BFAAD2189AE3A00ECD2EC /* Workout.storyboard */; };
+		CF3BFAB02189AE4A00ECD2EC /* Recipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3BFAAF2189AE4A00ECD2EC /* Recipe.storyboard */; };
+		CF3BFAB42189AE7800ECD2EC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3BFAB32189AE7800ECD2EC /* Profile.storyboard */; };
+		CF819C2721891A1300B352B1 /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF819C2621891A1300B352B1 /* Tab.storyboard */; };
+		CF8BAD14219273F2007EFC46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF8BAD13219273F1007EFC46 /* GoogleService-Info.plist */; };
+		CF95633B2188E15D00BE3D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95633A2188E15D00BE3D25 /* ProfileViewController.swift */; };
+		CF97771A21AF1879003E73F5 /* recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97771921AF1879003E73F5 /* recipes.swift */; };
+		CF97771C21AF1885003E73F5 /* workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97771B21AF1885003E73F5 /* workouts.swift */; };
+		CF97771E21AF188E003E73F5 /* socials.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97771D21AF188E003E73F5 /* socials.swift */; };
+		CF97772021AF1BCA003E73F5 /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97771F21AF1BCA003E73F5 /* SocialTableViewController.swift */; };
+		CF97772221AF1BD5003E73F5 /* SocialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97772121AF1BD5003E73F5 /* SocialTableViewCell.swift */; };
+		CF97772421AF1C6A003E73F5 /* AddSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97772321AF1C6A003E73F5 /* AddSocialViewController.swift */; };
+		CFB88CCE218807B300DFF1BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB88CCD218807B300DFF1BD /* HomeViewController.swift */; };
+		CFB88CD0218807E300DFF1BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB88CCF218807E300DFF1BD /* LoginViewController.swift */; };
+		CFB88CD221880B8100DFF1BD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB88CD121880B8100DFF1BD /* SignUpViewController.swift */; };
+		CFBF59602187974B00484AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF595F2187974B00484AB2 /* AppDelegate.swift */; };
+		CFBF59652187974B00484AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBF59632187974B00484AB2 /* Main.storyboard */; };
+		CFBF59672187974D00484AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBF59662187974D00484AB2 /* Assets.xcassets */; };
+		CFBF596A2187974D00484AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBF59682187974D00484AB2 /* LaunchScreen.storyboard */; };
+		CFCB820A21AE04CA00B8CA10 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB820921AE04CA00B8CA10 /* RecipeTableViewController.swift */; };
+		CFCB820C21AE04D200B8CA10 /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB820B21AE04D200B8CA10 /* WorkoutTableViewController.swift */; };
+		CFCB820E21AE04E100B8CA10 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB820D21AE04E100B8CA10 /* RecipeTableViewCell.swift */; };
+		CFCB821021AE04E800B8CA10 /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB820F21AE04E800B8CA10 /* WorkoutTableViewCell.swift */; };
+		CFCB821221AE27F800B8CA10 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB821121AE27F800B8CA10 /* AddWorkoutViewController.swift */; };
+		CFCB821421AE280100B8CA10 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB821321AE280100B8CA10 /* AddRecipeViewController.swift */; };
+		CFCB821621AE410300B8CA10 /* RViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB821521AE410300B8CA10 /* RViewController.swift */; };
+		CFCB821821AE410A00B8CA10 /* WViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB821721AE410900B8CA10 /* WViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E932B9A55392AF87E0BF133 /* Pods-FearlesslyFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FearlesslyFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FearlesslyFit/Pods-FearlesslyFit.debug.xcconfig"; sourceTree = "<group>"; };
+		55744B35276874C257F739BB /* Pods-FearlesslyFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FearlesslyFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FearlesslyFit/Pods-FearlesslyFit.release.xcconfig"; sourceTree = "<group>"; };
+		6B5A9D98FAD45FF83A4665DD /* libPods-FearlesslyFit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FearlesslyFit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF206622219F350400192E2D /* person-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "person-placeholder.png"; path = "Assets.xcassets/person-placeholder.png"; sourceTree = "<group>"; };
+		CF206628219F3F2300192E2D /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CF20662C219F475700192E2D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CF3BFAA92189AE0300ECD2EC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CF3BFAAB2189AE2800ECD2EC /* Social.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Social.storyboard; sourceTree = "<group>"; };
+		CF3BFAAD2189AE3A00ECD2EC /* Workout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Workout.storyboard; sourceTree = "<group>"; };
+		CF3BFAAF2189AE4A00ECD2EC /* Recipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recipe.storyboard; sourceTree = "<group>"; };
+		CF3BFAB32189AE7800ECD2EC /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		CF819C2621891A1300B352B1 /* Tab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
+		CF8BAD13219273F1007EFC46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FearlesslyFit/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CF95633A2188E15D00BE3D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = FearlesslyFit/LoginSign/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		CF97771921AF1879003E73F5 /* recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipes.swift; sourceTree = "<group>"; };
+		CF97771B21AF1885003E73F5 /* workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workouts.swift; sourceTree = "<group>"; };
+		CF97771D21AF188E003E73F5 /* socials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socials.swift; sourceTree = "<group>"; };
+		CF97771F21AF1BCA003E73F5 /* SocialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
+		CF97772121AF1BD5003E73F5 /* SocialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewCell.swift; sourceTree = "<group>"; };
+		CF97772321AF1C6A003E73F5 /* AddSocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSocialViewController.swift; sourceTree = "<group>"; };
+		CFB88CCD218807B300DFF1BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CFB88CCF218807E300DFF1BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CFB88CD121880B8100DFF1BD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CFBF595C2187974B00484AB2 /* FearlesslyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FearlesslyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBF595F2187974B00484AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFBF59642187974B00484AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFBF59662187974D00484AB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFBF59692187974D00484AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFBF596B2187974D00484AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCB820921AE04CA00B8CA10 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		CFCB820B21AE04D200B8CA10 /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
+		CFCB820D21AE04E100B8CA10 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		CFCB820F21AE04E800B8CA10 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		CFCB821121AE27F800B8CA10 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
+		CFCB821321AE280100B8CA10 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
+		CFCB821521AE410300B8CA10 /* RViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RViewController.swift; sourceTree = "<group>"; };
+		CFCB821721AE410900B8CA10 /* WViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFBF59592187974B00484AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8010372FD21BAA2E1B1C3F55 /* libPods-FearlesslyFit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		877368C0E9BBE998B47443E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A9D98FAD45FF83A4665DD /* libPods-FearlesslyFit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAFA133090E8C54910CD08D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E932B9A55392AF87E0BF133 /* Pods-FearlesslyFit.debug.xcconfig */,
+				55744B35276874C257F739BB /* Pods-FearlesslyFit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF819C2821891AE700B352B1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF59632187974B00484AB2 /* Main.storyboard */,
+				CF819C2621891A1300B352B1 /* Tab.storyboard */,
+				CF3BFAB32189AE7800ECD2EC /* Profile.storyboard */,
+				CF3BFAAF2189AE4A00ECD2EC /* Recipe.storyboard */,
+				CF3BFAAD2189AE3A00ECD2EC /* Workout.storyboard */,
+				CF3BFAAB2189AE2800ECD2EC /* Social.storyboard */,
+				CF3BFAA92189AE0300ECD2EC /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF95632E2188C0EC00BE3D25 /* WorkoutRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				CFCB820F21AE04E800B8CA10 /* WorkoutTableViewCell.swift */,
+				CFCB820D21AE04E100B8CA10 /* RecipeTableViewCell.swift */,
+				CFCB820921AE04CA00B8CA10 /* RecipeTableViewController.swift */,
+				CFCB820B21AE04D200B8CA10 /* WorkoutTableViewController.swift */,
+				CFCB821121AE27F800B8CA10 /* AddWorkoutViewController.swift */,
+				CFCB821321AE280100B8CA10 /* AddRecipeViewController.swift */,
+				CFCB821521AE410300B8CA10 /* RViewController.swift */,
+				CFCB821721AE410900B8CA10 /* WViewController.swift */,
+			);
+			path = WorkoutRecipes;
+			sourceTree = "<group>";
+		};
+		CF9563352188C13C00BE3D25 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				CF95633A2188E15D00BE3D25 /* ProfileViewController.swift */,
+				CF97771F21AF1BCA003E73F5 /* SocialTableViewController.swift */,
+				CF97772121AF1BD5003E73F5 /* SocialTableViewCell.swift */,
+				CF97772321AF1C6A003E73F5 /* AddSocialViewController.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		CF97771821AF1859003E73F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF97771921AF1879003E73F5 /* recipes.swift */,
+				CF97771B21AF1885003E73F5 /* workouts.swift */,
+				CF97771D21AF188E003E73F5 /* socials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFB88CCC2188079C00DFF1BD /* LoginSign */ = {
+			isa = PBXGroup;
+			children = (
+				CFB88CCD218807B300DFF1BD /* HomeViewController.swift */,
+				CFB88CCF218807E300DFF1BD /* LoginViewController.swift */,
+				CFB88CD121880B8100DFF1BD /* SignUpViewController.swift */,
+			);
+			path = LoginSign;
+			sourceTree = "<group>";
+		};
+		CFBF59532187974B00484AB2 = {
+			isa = PBXGroup;
+			children = (
+				CFBF595E2187974B00484AB2 /* FearlesslyFit */,
+				CFBF595D2187974B00484AB2 /* Products */,
+				BAFA133090E8C54910CD08D3 /* Pods */,
+				877368C0E9BBE998B47443E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFBF595D2187974B00484AB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF595C2187974B00484AB2 /* FearlesslyFit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFBF595E2187974B00484AB2 /* FearlesslyFit */ = {
+			isa = PBXGroup;
+			children = (
+				CF206628219F3F2300192E2D /* AuthService.swift */,
+				CF20662C219F475700192E2D /* Config.swift */,
+				CF206622219F350400192E2D /* person-placeholder.png */,
+				CF8BAD13219273F1007EFC46 /* GoogleService-Info.plist */,
+				CFBF595F2187974B00484AB2 /* AppDelegate.swift */,
+				CF9563352188C13C00BE3D25 /* Misc */,
+				CF97771821AF1859003E73F5 /* Models */,
+				CF95632E2188C0EC00BE3D25 /* WorkoutRecipes */,
+				CFB88CCC2188079C00DFF1BD /* LoginSign */,
+				CF819C2821891AE700B352B1 /* Storyboards */,
+				CFBF59662187974D00484AB2 /* Assets.xcassets */,
+				CFBF59682187974D00484AB2 /* LaunchScreen.storyboard */,
+				CFBF596B2187974D00484AB2 /* Info.plist */,
+			);
+			path = FearlesslyFit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFBF595B2187974B00484AB2 /* FearlesslyFit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBF596E2187974D00484AB2 /* Build configuration list for PBXNativeTarget "FearlesslyFit" */;
+			buildPhases = (
+				302E8FCCC88E02880B080CAF /* [CP] Check Pods Manifest.lock */,
+				CFBF59582187974B00484AB2 /* Sources */,
+				CFBF59592187974B00484AB2 /* Frameworks */,
+				CFBF595A2187974B00484AB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FearlesslyFit;
+			productName = FearlesslyFit;
+			productReference = CFBF595C2187974B00484AB2 /* FearlesslyFit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFBF59542187974B00484AB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Kathy Nguyen";
+				TargetAttributes = {
+					CFBF595B2187974B00484AB2 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = CFBF59572187974B00484AB2 /* Build configuration list for PBXProject "FearlesslyFit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFBF59532187974B00484AB2;
+			productRefGroup = CFBF595D2187974B00484AB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFBF595B2187974B00484AB2 /* FearlesslyFit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFBF595A2187974B00484AB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3BFAB02189AE4A00ECD2EC /* Recipe.storyboard in Resources */,
+				CF3BFAB42189AE7800ECD2EC /* Profile.storyboard in Resources */,
+				CF3BFAAE2189AE3A00ECD2EC /* Workout.storyboard in Resources */,
+				CF819C2721891A1300B352B1 /* Tab.storyboard in Resources */,
+				CF3BFAAA2189AE0300ECD2EC /* Home.storyboard in Resources */,
+				CFBF596A2187974D00484AB2 /* LaunchScreen.storyboard in Resources */,
+				CFBF59672187974D00484AB2 /* Assets.xcassets in Resources */,
+				CF206623219F350400192E2D /* person-placeholder.png in Resources */,
+				CF8BAD14219273F2007EFC46 /* GoogleService-Info.plist in Resources */,
+				CFBF59652187974B00484AB2 /* Main.storyboard in Resources */,
+				CF3BFAAC2189AE2800ECD2EC /* Social.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		302E8FCCC88E02880B080CAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FearlesslyFit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFBF59582187974B00484AB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF97772021AF1BCA003E73F5 /* SocialTableViewController.swift in Sources */,
+				CFB88CD0218807E300DFF1BD /* LoginViewController.swift in Sources */,
+				CF97772221AF1BD5003E73F5 /* SocialTableViewCell.swift in Sources */,
+				CFCB821621AE410300B8CA10 /* RViewController.swift in Sources */,
+				CFBF59602187974B00484AB2 /* AppDelegate.swift in Sources */,
+				CFCB820E21AE04E100B8CA10 /* RecipeTableViewCell.swift in Sources */,
+				CF20662D219F475700192E2D /* Config.swift in Sources */,
+				CFB88CD221880B8100DFF1BD /* SignUpViewController.swift in Sources */,
+				CF95633B2188E15D00BE3D25 /* ProfileViewController.swift in Sources */,
+				CF97771E21AF188E003E73F5 /* socials.swift in Sources */,
+				CF206629219F3F2300192E2D /* AuthService.swift in Sources */,
+				CFCB821821AE410A00B8CA10 /* WViewController.swift in Sources */,
+				CFCB820A21AE04CA00B8CA10 /* RecipeTableViewController.swift in Sources */,
+				CF97772421AF1C6A003E73F5 /* AddSocialViewController.swift in Sources */,
+				CFB88CCE218807B300DFF1BD /* HomeViewController.swift in Sources */,
+				CFCB821421AE280100B8CA10 /* AddRecipeViewController.swift in Sources */,
+				CFCB821221AE27F800B8CA10 /* AddWorkoutViewController.swift in Sources */,
+				CF97771A21AF1879003E73F5 /* recipes.swift in Sources */,
+				CF97771C21AF1885003E73F5 /* workouts.swift in Sources */,
+				CFCB821021AE04E800B8CA10 /* WorkoutTableViewCell.swift in Sources */,
+				CFCB820C21AE04D200B8CA10 /* WorkoutTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFBF59632187974B00484AB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBF59642187974B00484AB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFBF59682187974D00484AB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBF59692187974D00484AB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFBF596C2187974D00484AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFBF596D2187974D00484AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFBF596F2187974D00484AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E932B9A55392AF87E0BF133 /* Pods-FearlesslyFit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33TWX65P52;
+				INFOPLIST_FILE = FearlesslyFit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fse301.FearlesslyFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFBF59702187974D00484AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55744B35276874C257F739BB /* Pods-FearlesslyFit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33TWX65P52;
+				INFOPLIST_FILE = FearlesslyFit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fse301.FearlesslyFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFBF59572187974B00484AB2 /* Build configuration list for PBXProject "FearlesslyFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBF596C2187974D00484AB2 /* Debug */,
+				CFBF596D2187974D00484AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBF596E2187974D00484AB2 /* Build configuration list for PBXNativeTarget "FearlesslyFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBF596F2187974D00484AB2 /* Debug */,
+				CFBF59702187974D00484AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFBF59542187974B00484AB2 /* Project object */;
+}

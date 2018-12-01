@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="URP-eE-8zZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="2ul-CN-8Sl">
+            <objects>
+                <viewController id="URP-eE-8zZ" customClass="LoginViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bDP-tU-WoY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RJI-zZ-AkT">
+                                <rect key="frame" x="16" y="268" width="343" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qy0-vj-rE5">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwz-8e-HXP">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0L-K2-YV1">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="sI0-GS-Gt6" kind="presentation" id="sgu-cO-Edh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHJ-uc-764">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <state key="normal" title="Don't have an account? Sign up!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="b5C-bB-v5K" kind="presentation" id="pTa-0z-XL7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fearlessly Fit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMX-WY-dFj">
+                                <rect key="frame" x="56.5" y="40" width="262" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoFF" translatesAutoresizingMaskIntoConstraints="NO" id="eBk-9v-bMg">
+                                <rect key="frame" x="122.5" y="98" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="HHE-sT-GhU"/>
+                                    <constraint firstAttribute="height" constant="130" id="YnC-Js-KFw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Dark Gunmetal"/>
+                        <constraints>
+                            <constraint firstItem="eBk-9v-bMg" firstAttribute="centerX" secondItem="bDP-tU-WoY" secondAttribute="centerX" id="6jA-8g-mpQ"/>
+                            <constraint firstItem="RHJ-uc-764" firstAttribute="leading" secondItem="zPz-3r-8Pa" secondAttribute="leading" constant="16" id="IAH-SG-S8s"/>
+                            <constraint firstItem="PMX-WY-dFj" firstAttribute="centerX" secondItem="bDP-tU-WoY" secondAttribute="centerX" id="K6f-7x-dcS"/>
+                            <constraint firstItem="eBk-9v-bMg" firstAttribute="top" secondItem="PMX-WY-dFj" secondAttribute="bottom" constant="30.5" id="T84-P1-wa8"/>
+                            <constraint firstItem="PMX-WY-dFj" firstAttribute="top" secondItem="zPz-3r-8Pa" secondAttribute="top" constant="20" id="aU7-RI-7tP"/>
+                            <constraint firstItem="zPz-3r-8Pa" firstAttribute="bottom" secondItem="RHJ-uc-764" secondAttribute="bottom" constant="20" id="bZA-fD-JWc"/>
+                            <constraint firstItem="zPz-3r-8Pa" firstAttribute="trailing" secondItem="RHJ-uc-764" secondAttribute="trailing" constant="16" id="f4B-5A-ROQ"/>
+                            <constraint firstItem="RJI-zZ-AkT" firstAttribute="leading" secondItem="zPz-3r-8Pa" secondAttribute="leading" constant="16" id="lBp-th-g4l"/>
+                            <constraint firstItem="zPz-3r-8Pa" firstAttribute="trailing" secondItem="RJI-zZ-AkT" secondAttribute="trailing" constant="16" id="ms8-sb-EsY"/>
+                            <constraint firstItem="RJI-zZ-AkT" firstAttribute="top" secondItem="eBk-9v-bMg" secondAttribute="bottom" constant="40" id="wu7-GA-WeW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zPz-3r-8Pa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rax-Ib-GQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-545" y="184"/>
+        </scene>
+        <!--Trainers-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TrainerViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Spiro Disco Ball"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trainers" id="6cM-de-qHP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="2068"/>
+        </scene>
+        <!--Social Page-->
+        <scene sceneID="3mT-f4-Hze">
+            <objects>
+                <viewController id="xw8-Hh-nEX" customClass="SocialViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PcL-ye-8MJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Spiro Disco Ball"/>
+                        <viewLayoutGuide key="safeArea" id="cmU-l4-aG0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Social Page" id="dFi-Qy-NMl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IT4-qb-l7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="-152"/>
+        </scene>
+        <!--Welcome to Fearlessly Fit-->
+        <scene sceneID="YUR-ij-OE2">
+            <objects>
+                <viewController id="nuC-z6-jez" customClass="HomeViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SlV-AY-oLe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Spiro Disco Ball"/>
+                        <viewLayoutGuide key="safeArea" id="Ufl-S4-RFz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome to Fearlessly Fit" id="Zuy-gn-bI0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLc-cu-eiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="-869"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OAA-6O-Bqo">
+            <objects>
+                <tabBarController id="sI0-GS-Gt6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vYc-eg-teK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pKo-4v-LFu" kind="relationship" relationship="viewControllers" id="omh-EL-WQK"/>
+                        <segue destination="ST9-es-65u" kind="relationship" relationship="viewControllers" id="Sfo-Ik-r9F"/>
+                        <segue destination="xy9-vY-WTb" kind="relationship" relationship="viewControllers" id="2Yr-8L-2dx"/>
+                        <segue destination="hcJ-Gs-9CC" kind="relationship" relationship="viewControllers" id="6Xd-AH-eVd"/>
+                        <segue destination="5g4-mn-QBo" kind="relationship" relationship="viewControllers" id="yBS-L8-tNg"/>
+                        <segue destination="vcg-NS-dme" kind="relationship" relationship="viewControllers" id="sEd-z4-SSA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axl-hf-OUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="557"/>
+        </scene>
+        <!--Workouts-->
+        <scene sceneID="mfZ-5W-zWG">
+            <objects>
+                <viewController id="FCi-ci-LdF" customClass="WorkoutViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3sf-bp-YZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Spiro Disco Ball"/>
+                        <viewLayoutGuide key="safeArea" id="xgd-Au-yfM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Workouts" id="aeP-mL-XJ4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0A-eW-0da" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="555"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="sgT-wt-jka">
+            <objects>
+                <viewController id="NWG-Tr-XUD" customClass="RecipeViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c1y-yL-cSf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Spiro Disco Ball"/>
+                        <viewLayoutGuide key="safeArea" id="jT2-JP-vOy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recipes" id="Aih-0Y-Qv3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l5X-66-v0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="1328"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="ms6-ZW-y5f">
+            <objects>
+                <viewController id="b5C-bB-v5K" customClass="SignUpViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNB-nb-0Rh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IJb-Jl-Jvf">
+                                <rect key="frame" x="16" y="240" width="343" height="180"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMN-6D-Urz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1R-3j-sDC">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-Ct-osy">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izN-Qk-vQL">
+                                        <rect key="frame" x="0.0" y="150" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="sI0-GS-Gt6" kind="presentation" id="Ra8-9r-p26"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-In-1Nz">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <state key="normal" title="Already an account? Sign in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismiss_onclick:" destination="b5C-bB-v5K" eventType="touchUpInside" id="96b-1l-OGt"/>
+                                    <action selector="dismiss_onclick:" destination="BeN-Hk-FwC" eventType="touchUpInside" id="ljG-ju-cGR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tbI-Ma-zuP">
+                                <rect key="frame" x="137.5" y="95" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="I1B-3Q-0zZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="xg2-Ct-OqB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Dark Gunmetal"/>
+                        <constraints>
+                            <constraint firstItem="IJb-Jl-Jvf" firstAttribute="leading" secondItem="Cvq-U2-81t" secondAttribute="leading" constant="16" id="CaO-pH-3nf"/>
+                            <constraint firstItem="0yB-In-1Nz" firstAttribute="leading" secondItem="Cvq-U2-81t" secondAttribute="leading" constant="16" id="SG2-A4-HeO"/>
+                            <constraint firstItem="Cvq-U2-81t" firstAttribute="trailing" secondItem="0yB-In-1Nz" secondAttribute="trailing" constant="16" id="WhW-in-NIu"/>
+                            <constraint firstItem="tbI-Ma-zuP" firstAttribute="top" secondItem="Cvq-U2-81t" secondAttribute="top" constant="75" id="Wr8-8W-6qn"/>
+                            <constraint firstItem="IJb-Jl-Jvf" firstAttribute="top" secondItem="tbI-Ma-zuP" secondAttribute="bottom" constant="45" id="f4g-kz-BVZ"/>
+                            <constraint firstItem="Cvq-U2-81t" firstAttribute="trailing" secondItem="IJb-Jl-Jvf" secondAttribute="trailing" constant="16" id="j9R-Vp-qMf"/>
+                            <constraint firstItem="tbI-Ma-zuP" firstAttribute="centerX" secondItem="gNB-nb-0Rh" secondAttribute="centerX" id="xWc-ic-en0"/>
+                            <constraint firstItem="Cvq-U2-81t" firstAttribute="bottom" secondItem="0yB-In-1Nz" secondAttribute="bottom" constant="20" id="z9r-nH-pq3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cvq-U2-81t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvh-Rh-G7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BeN-Hk-FwC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="972"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Nrf-7u-0pi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pKo-4v-LFu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="ek9-eT-B8E"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rmh-iX-g7U">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nuC-z6-jez" kind="relationship" relationship="rootViewController" id="Roe-nn-iGV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lff-sy-bIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="-869"/>
+        </scene>
+        <!--Social-->
+        <scene sceneID="hv1-9k-tuw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ST9-es-65u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Social" id="im0-HM-XM3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1pw-6j-hBA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xw8-Hh-nEX" kind="relationship" relationship="rootViewController" id="VSV-5g-IH4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QiX-YI-9mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="-152.47376311844079"/>
+        </scene>
+        <!--Workouts-->
+        <scene sceneID="glN-QA-wtZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xy9-vY-WTb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Workouts" id="QqG-wS-9e8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VH0-Ci-zg9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FCi-ci-LdF" kind="relationship" relationship="rootViewController" id="Af0-5z-Nwr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xiZ-3n-brj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="555.47226386806597"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="pdo-0L-00c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hcJ-Gs-9CC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recipes" id="F0w-Wq-dCb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lNe-vH-co2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NWG-Tr-XUD" kind="relationship" relationship="rootViewController" id="E62-PI-epn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZf-fp-R70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="1328.1859070464768"/>
+        </scene>
+        <!--Trainers-->
+        <scene sceneID="aGy-mm-Esr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5g4-mn-QBo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trainers" id="3w0-4g-Ha3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yjD-0a-GZL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SMB-TA-ejF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilO-Zz-BhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="2067.6161919040483"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="nR8-rg-t2a">
+            <objects>
+                <viewController id="Opm-jt-IXt" customClass="ProfileViewController" customModule="FearlesslyFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lyR-vP-eTl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Spiro Disco Ball"/>
+                        <viewLayoutGuide key="safeArea" id="nxy-cD-1Kf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sMs-4K-YpU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xq-qx-AAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="2785"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="z9N-a2-02m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vcg-NS-dme" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="yWF-mG-wYH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LER-7p-ngO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Opm-jt-IXt" kind="relationship" relationship="rootViewController" id="cgg-f7-VoU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhf-bC-ivu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="2784.5577211394307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoFF" width="60" height="60"/>
+        <image name="person-placeholder" width="400" height="400"/>
+        <namedColor name="Dark Gunmetal">
+            <color red="0.094117647058823528" green="0.15294117647058825" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Spiro Disco Ball">
+            <color red="0.14901960784313725" green="0.73725490196078436" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sgu-cO-Edh"/>
+    </inferredMetricsTieBreakers>
+</document>

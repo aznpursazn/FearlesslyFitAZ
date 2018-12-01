@@ -1,0 +1,9 @@
+target 'FearlesslyFit' do
+  platform :ios, '7.0'
+  pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Core'
+end
